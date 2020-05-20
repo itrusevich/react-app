@@ -3,8 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 10vmin;
+  pointer-events: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +15,19 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +36,40 @@
   color: white;
 }
 
+.App-content {
+  background-color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.middle {
+  flex: 50%;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexRow {
+    flex-direction: column;
+  }
+}
+
+.menuItem {
+  padding-right: 2pc;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +79,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.ulUnordered {
+  list-style-type: none;
 }
