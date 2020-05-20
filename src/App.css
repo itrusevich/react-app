@@ -72,6 +72,11 @@
   padding-right: 2pc;
 }
 
+.contentColumn {
+  padding-right: 2pc;
+  margin-left: 2pc;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -83,4 +88,8 @@
 
 .ulUnordered {
   list-style-type: none;
+}
+
+.link-not-underlined {
+  text-decoration: none;
 }
