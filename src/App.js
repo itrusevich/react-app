@@ -14,7 +14,7 @@ function App() {
   }
 
   const click = (menuItem) => {
-    alert(menuItem);
+    console.log(menuItem);
   }
 
   return (
