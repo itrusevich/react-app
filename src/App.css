@@ -51,7 +51,7 @@
   color: #61dafb;
 }
 
-.flexRow {
+.flex-row {
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -63,7 +63,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .flexRow {
+  .flex-row {
     flex-direction: column;
   }
 }
@@ -72,7 +72,7 @@
   padding-right: 2pc;
 }
 
-.contentColumn {
+.content-column {
   padding-right: 2pc;
   margin-left: 2pc;
 }
@@ -86,7 +86,7 @@
   }
 }
 
-.ulUnordered {
+.ul-unordered {
   list-style-type: none;
 }
 
