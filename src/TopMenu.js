@@ -7,7 +7,7 @@ function TopMenu(props) {
     <div className="flexRow">
       <div> <Logo /> </div>
       <ul className="flexRow">
-        {props.topMenu.map(el => <li key={el}><div className="menuItem"><a href="https://itrusevich.github.io/react-app" className="App-link link-not-underlined" onClick={()=> props.click(el)}><strong>{el}</strong></a> </div></li>)}
+        {props.topMenu.map(el => <li key={el}><div className="menuItem"><button className="button-link" onClick={()=> props.click(el)}><strong>{el}</strong></button> </div></li>)}
       </ul>
     </div>
   )
