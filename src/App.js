@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './Header.js';
-import Content from './Content.js';
-import Footer from './Footer.js';
+import Header from './components/Header.js';
+import Content from './components/Content.js';
+import Footer from './components/Footer.js';
 
 function App() {
   const appVersion = '0.2.32';

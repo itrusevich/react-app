@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import FooterMenu from './FooterMenu';
 
 function Footer(props) {

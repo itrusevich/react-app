@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
-import Logo from './Logo';
+import '../App.css';
+import Logo from '../Logo';
 
 function TopMenu(props) {
   return (
     <div className="flexRow">
       <div> <Logo /> </div>
-      <ul className="flexRow">
+      <ul className="flexRow ulUnordered">
         {props.topMenu.map(el => <li key={el}><div className="menuItem"><button className="button-link" onClick={()=> props.click(el)}><strong>{el}</strong></button> </div></li>)}
       </ul>
     </div>
