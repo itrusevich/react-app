@@ -9,6 +9,9 @@ function App() {
   const topMenu = ['About', 'Prices', 'Products', 'Services'];
   const footerMenu = ['Careers', 'Contact us', 'Return Policy', 'Shipping', 'FAQ']
 
+  const fisher = (fish) => {
+    console.log('Pull ' + fish)
+  }
 
   const click = (menuItem) => {
     alert(menuItem);
@@ -18,7 +21,7 @@ function App() {
     <div className="App">
       <Header version={appVersion} topMenu={topMenu} click = {click}/>
       <Content />
-      <Footer footerMenu={footerMenu} />
+      <Footer footerMenu={footerMenu} attempt={fisher}/>
     </div>
   );
 }
